@@ -29,12 +29,15 @@ import com.lebab.datumbox.service.intf.HitApiService;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	private final static String API_KEY = "api_key=Insert your API key provided by datumbox";
 	private static String HOME = "home";
 	private static String MV_SHOW = "show";
 
 	@Autowired
 	private HitApiService hitApiService;
+	
+	@Autowired
+	private AppConfig config;
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 * @throws IOException 
@@ -42,15 +45,14 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) throws IOException {
 		model.addAttribute("formData", new FormData());
-
 		
 		return HOME;
 	}
 	 @RequestMapping(value = "/show", method = RequestMethod.POST)
 	    public String responseAPI(@ModelAttribute("formData") FormData formData, BindingResult  result, Model model) throws IOException {
 	       
-		 String urlParameters = API_KEY + "&text=" + formData.getRequestText();
-			String request = "http://api.datumbox.com/1.0/TwitterSentimentAnalysis.json";
+		 String urlParameters = "api_key=" + config.getApi_key() + "&text=" + formData.getRequestText();
+			String request = config.getUrl();
 			URL url = new URL(request);
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			logger.debug("Sending reqeuest to datumbox");
