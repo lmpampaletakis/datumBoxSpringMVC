@@ -21,4 +21,4 @@ You can use and the following URLs that datumbox offers
 		datumbox.url = "http://api.datumbox.com/1.0/KeywordExtraction.json";
 		datumbox.url = "http://api.datumbox.com/1.0/TextExtraction.json";
 		datumbox.url = "http://api.datumbox.com/1.0/KeywordExtraction.json";
-		datumbox.url = "http://api.datumbox.com/1.0/KeywordExtraction.json"; 
+		datumbox.url = "http://api.datumbox.com/1.0/KeywordExtraction.json";
