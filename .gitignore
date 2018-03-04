@@ -113,3 +113,12 @@ fabric.properties
 .idea/vcs.xml
 .idea/workspace.xml
 *.iml
+.classpath
+.project
+/datumBoxSpringMVC/.springBeans
+/datumBoxSpringMVC/Servers/
+/datumBoxSpringMVC/RemoteSystemsTempFiles/
+/datumBoxSpringMVC/.settings/
+/datumBoxSpringMVC/.metadata/
+/datumBoxSpringMVC/.project
+/datumBoxSpringMVC/.classpath
