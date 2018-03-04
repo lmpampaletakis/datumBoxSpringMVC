@@ -11,9 +11,9 @@
 <title>Home</title>
 </head>
 <body>
-	<h1><spring:message code="home.title"/></h1>
+	<h1>Home DatumBox client</h1>
 
-	<form:form method="POST" action="show" commandName="formData">
+	<form:form method="POST" action="show" modelAttribute="formData">
 		<div class="wrapper">
 			<div class="container"> 
 				<div class="content">

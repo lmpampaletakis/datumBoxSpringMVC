@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="datumBoxSpringMVC:war">
+    <output-path>$PROJECT_DIR$/datumBoxSpringMVC/target</output-path>
+    <root id="archive" name="datumBoxSpringMVC-1.0.1.war">
+      <element id="artifact" artifact-name="datumBoxSpringMVC:war exploded" />
+    </root>
+  </artifact>
+</component>
